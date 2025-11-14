@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/inter-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/inter-semibold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/inter-bold.woff2') format('woff2');
+}
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', ui-sans-serif, system-ui;
+  }
+
+  html {
+    font-family: var(--font-sans);
+  }
+}
+
+@theme {
+  /* 
+   * Consumer can override the font-sans variable using the code below:
+   * :root { --font-sans: 'Roboto', sans-serif; }
+   */
+  --font-sans: var(--font-sans);
+}

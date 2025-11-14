@@ -1,0 +1,84 @@
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-neutral-150: oklch(95.5% 0 0);
+  --color-neutral-750: oklch(33% 0 0);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-accent: var(--background-accent);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-accent: var(--card-accent);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-accent: var(--primary-accent);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-accent: var(--secondary-accent);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-accent: var(--destructive-accent);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --background: var(--color-white);
+  --background-accent: var(--color-neutral-100);
+  --foreground: var(--color-neutral-950);
+  --card: var(--color-neutral-50);
+  --card-accent: var(--color-neutral-100);
+  --card-foreground: var(--color-neutral-950);
+  --primary: var(--color-neutral-900);
+  --primary-accent: var(--color-neutral-750);
+  --primary-foreground: var(--color-neutral-50);
+  --secondary: var(--color-neutral-100);
+  --secondary-accent: var(--color-neutral-150);
+  --secondary-foreground: var(--color-neutral-900);
+  --destructive: color-mix(in oklch, var(--color-red-600), transparent 10%);
+  --destructive-accent: var(--color-red-500);
+  --destructive-foreground: var(--color-red-50);
+  --border: var(--color-neutral-300);
+  --ring: var(--color-neutral-300);
+  --radius: 0.625rem;
+}
+
+.dark {
+  --background: var(--color-neutral-950);
+  --background-accent: var(--color-neutral-800);
+  --foreground: var(--color-neutral-50);
+  --card: var(--color-neutral-900);
+  --card-accent: var(--color-neutral-800);
+  --card-foreground: var(--color-neutral-50);
+  --primary: var(--color-neutral-50);
+  --primary-accent: var(--color-neutral-200);
+  --primary-foreground: var(--color-neutral-900);
+  --secondary: var(--color-neutral-800);
+  --secondary-accent: var(--color-neutral-750);
+  --secondary-foreground: var(--color-neutral-50);
+  --destructive: color-mix(in oklch, var(--color-red-400), transparent 40%);
+  --destructive-accent: color-mix(
+    in oklch,
+    var(--color-red-400),
+    transparent 30%
+  );
+  --destructive-foreground: var(--color-red-50);
+  --border: var(--color-neutral-700);
+  --ring: var(--color-neutral-500);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

@@ -1,0 +1,35 @@
+# References
+#  - https://www.toptal.com/developers/gitignore/
+#  - https://github.com/github/gitignore
+
+# Build output
+dist
+
+# Dependencies
+node_modules
+
+# Debug
+logs
+*.log
+npm-debug.log*
+
+# Env
+*.local
+
+# Typescript
+*.tsbuildinfo
+
+# Storybook
+*storybook.log
+storybook-static
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
