@@ -27,6 +27,8 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  --color-switch-unchecked: var(--switch-unchecked);
 }
 
 :root {
@@ -48,6 +50,8 @@
   --border: var(--color-neutral-300);
   --ring: var(--color-neutral-300);
   --radius: 0.625rem;
+
+  --switch-unchecked: var(--color-gray-300);
 }
 
 .dark {
@@ -72,13 +76,16 @@
   --destructive-foreground: var(--color-red-50);
   --border: var(--color-neutral-700);
   --ring: var(--color-neutral-500);
+
+  --switch-unchecked: var(--color-gray-400);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
-  body .dark {
+  body,
+  .dark {
     @apply bg-background text-foreground;
   }
 }

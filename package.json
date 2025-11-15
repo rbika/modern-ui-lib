@@ -53,6 +53,7 @@
     "vite-plugin-dts": "^4.5.4"
   },
   "dependencies": {
+    "@radix-ui/react-switch": "^1.2.6",
     "class-variance-authority": "^0.7.1"
   },
   "peerDependencies": {
