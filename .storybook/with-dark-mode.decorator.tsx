@@ -34,7 +34,7 @@ const withDarkMode: Decorator = (Story, context) => {
 
   return (
     <div>
-      <div className="border-border border px-8 py-12">
+      <div className="border-border border border-b-0 px-8 py-12">
         <Story />
       </div>
       <div className="border-background dark bg-background border px-8 py-12">
