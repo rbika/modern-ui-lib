@@ -6,7 +6,7 @@ import { cn } from '@/utils/cn'
 const buttonVariants = cva(
   cn(
     'inline-flex shrink-0 cursor-pointer items-center justify-center gap-2 rounded-md text-sm font-medium transition outline-none',
-    'focus-visible:ring-ring focus-visible:ring-[3px]',
+    'focus-visible:ring-ring focus-visible:ring-offset-background focus-visible:ring-[3px] focus-visible:ring-offset-2',
     'disabled:cursor-not-allowed disabled:opacity-50 [&_svg]:shrink-0',
   ),
   {

@@ -130,6 +130,9 @@ See the <a href="https://www.radix-ui.com/primitives/docs/components/alert-dialo
 export default meta
 type Story = StoryObj<typeof meta>
 
+// AlertDialog stories
+// -------------------
+
 export const Default: Story = {
   render: () => (
     <AlertDialog>
