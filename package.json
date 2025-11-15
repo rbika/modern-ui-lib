@@ -1,6 +1,6 @@
 {
   "name": "modern-ui-lib",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A starter template for building modern, accessible React component libraries.",
   "type": "module",
   "types": "dist/main.d.ts",
