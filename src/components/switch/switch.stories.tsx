@@ -27,6 +27,15 @@ See the <a href="https://www.radix-ui.com/primitives/docs/components/switch" tar
         defaultValue: { summary: 'false' },
       },
     },
+    defaultChecked: {
+      control: false,
+      description:
+        'The state of the switch when it is initially rendered. Use when you do not need to control its state.',
+      table: {
+        type: { summary: 'boolean' },
+        defaultValue: { summary: 'false' },
+      },
+    },
     checked: {
       control: 'boolean',
       description:
@@ -55,6 +64,7 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   args: {
     disabled: false,
+    defaultChecked: false,
     checked: false,
     onCheckedChange: () => undefined,
   },
