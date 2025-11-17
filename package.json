@@ -17,7 +17,8 @@
     "dev": "storybook dev -p 6006",
     "build:storybook": "storybook build",
     "lint": "tsc -b && eslint .",
-    "prettier": "prettier . --write"
+    "prettier": "prettier . --write",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
