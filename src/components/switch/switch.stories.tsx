@@ -19,14 +19,6 @@ See the <a href="https://www.radix-ui.com/primitives/docs/components/switch" tar
   },
   tags: ['autodocs'],
   argTypes: {
-    disabled: {
-      control: 'boolean',
-      description: 'Whether the switch is disabled.',
-      table: {
-        type: { summary: 'boolean' },
-        defaultValue: { summary: 'false' },
-      },
-    },
     defaultChecked: {
       control: false,
       description:
@@ -50,6 +42,14 @@ See the <a href="https://www.radix-ui.com/primitives/docs/components/switch" tar
       description: 'Event handler called when the state of the switch changes.',
       table: {
         type: { summary: '(checked: boolean) => void' },
+      },
+    },
+    disabled: {
+      control: 'boolean',
+      description: 'Whether the switch is disabled.',
+      table: {
+        type: { summary: 'boolean' },
+        defaultValue: { summary: 'false' },
       },
     },
   },

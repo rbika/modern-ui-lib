@@ -18,14 +18,6 @@ See the <a href="https://www.radix-ui.com/primitives/docs/components/checkbox" t
   },
   tags: ['autodocs'],
   argTypes: {
-    disabled: {
-      control: 'boolean',
-      description: 'Whether the checkbox is disabled.',
-      table: {
-        type: { summary: 'boolean' },
-        defaultValue: { summary: 'false' },
-      },
-    },
     defaultChecked: {
       control: false,
       description:
@@ -50,6 +42,14 @@ See the <a href="https://www.radix-ui.com/primitives/docs/components/checkbox" t
         'Event handler called when the state of the checkbox changes.',
       table: {
         type: { summary: '(checked: boolean) => void' },
+      },
+    },
+    disabled: {
+      control: 'boolean',
+      description: 'Whether the checkbox is disabled.',
+      table: {
+        type: { summary: 'boolean' },
+        defaultValue: { summary: 'false' },
       },
     },
   },
