@@ -7,15 +7,15 @@ View on [Bundlephobia](https://bundlephobia.com/package/modern-ui-lib).
 
 ## Tech Stack
 
-- **[React](https://react.dev/)** - UI framework
-- **[TypeScript](https://www.typescriptlang.org/)** - Type safety
-- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first styling
-- **[Radix UI](https://www.radix-ui.com/)** - Accessible component primitives
-- **[Vite](https://vite.dev/)** - Build tool and bundler
-- **[Storybook](https://storybook.js.org/)** - Component documentation and development
-- **[ESLint](https://eslint.org/)** - Code linting
-- **[Prettier](https://prettier.io/)** - Code formatting
-- **[Lefthook](https://lefthook.dev/)** - Git hooks management
+- [React](https://react.dev/) - UI framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first styling
+- [Radix UI](https://www.radix-ui.com/) - Accessible component primitives
+- [Vite](https://vite.dev/) - Build tool and bundler
+- [Storybook](https://storybook.js.org/) - Component documentation and development
+- [ESLint](https://eslint.org/) - Code linting
+- [Prettier](https://prettier.io/) - Code formatting
+- [Lefthook](https://lefthook.dev/) - Git hooks management
 
 ## Features
 
@@ -25,6 +25,28 @@ View on [Bundlephobia](https://bundlephobia.com/package/modern-ui-lib).
 - **Code linting and formatting** - Automated code quality with ESLint and Prettier
 - **Pre-commit hooks** - Automated checks before commits via Lefthook
 - **Accessible** - Components built on Radix UI primitives
+
+## Usage
+
+1. Installation:
+
+   ```
+   npm i modern-ui-lib
+   ```
+
+2. Import CSS:
+   ```
+   @import "modern-ui-lib/css/main.css";
+   ```
+3. Import the components:
+
+   ```
+   import { Button } from 'modern-ui-lib'
+
+   function App() {
+     return <Button>Click me</Button>
+   }
+   ```
 
 ## Development
 
