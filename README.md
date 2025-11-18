@@ -21,23 +21,25 @@ View on [Bundlephobia](https://bundlephobia.com/package/modern-ui-lib).
 
 - **Tree-shakeable** - Optimized bundle size with tree-shaking support
 - **Storybook documentation** - Interactive component playground and documentation
-- **Light and dark mode** - Built-in theme support
+- **Light and dark modes** - Built-in theme support
 - **Code linting and formatting** - Automated code quality with ESLint and Prettier
 - **Pre-commit hooks** - Automated checks before commits via Lefthook
 - **Accessible** - Components built on Radix UI primitives
 
 ## Usage
 
-1. Installation:
+1. Install the package:
 
    ```
    npm i modern-ui-lib
    ```
 
-2. Import CSS:
+2. Import the CSS:
+
    ```
    @import "modern-ui-lib/css/main.css";
    ```
+
 3. Import the components:
 
    ```
@@ -47,6 +49,8 @@ View on [Bundlephobia](https://bundlephobia.com/package/modern-ui-lib).
      return <Button>Click me</Button>
    }
    ```
+
+Check out [this sample project](https://github.com/rbika/modern-ui-lib-consumer) for a more complete example.
 
 ## Development
 
@@ -88,4 +92,4 @@ This will start Storybook on `http://localhost:6006` where you can view and deve
 
 ## License
 
-[MIT](https://github.com/rbika/modern-ui-lib/blob/master/LICENSE) license.
+Licensed under the [MIT License](https://github.com/rbika/modern-ui-lib/blob/master/LICENSE).
